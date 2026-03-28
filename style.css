@@ -1,0 +1,104 @@
+:root {
+    --gold: #c5a059;
+    --dark-bg: #121212;
+    --text-light: #e0e0e0;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Título Principal Elegante */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    z-index: 10;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.brand-names {
+    color: var(--gold);
+    font-style: italic;
+    font-size: 5rem;
+}
+
+.gold-line {
+    width: 100px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px auto;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+/* Efectos de los productos */
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.product-item img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border: 1px solid var(--gold);
+    padding: 10px;
+}
+
+/* Animaciones */
+.reveal {
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.fade-left { transform: translateX(-150px); }
+.fade-right { transform: translateX(150px); }
+
+.reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Botón Pro */
+.btn-primary {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.btn-primary:hover {
+    background: var(--gold);
+    color: #000;
+}
